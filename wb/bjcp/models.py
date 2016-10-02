@@ -26,6 +26,7 @@ class Tag(models.Model):
 class SubCategory(models.Model):
     code = models.CharField(max_length=31)
     name = models.CharField(max_length=255)
+    category = models.ForeignKey(Category)
     aroma = models.TextField(blank=True, null=True)
     appearance = models.TextField(blank=True, null=True)
     flavor = models.TextField(blank=True, null=True)
@@ -37,7 +38,7 @@ class SubCategory(models.Model):
     comparison = models.TextField(blank=True, null=True)
     examples = models.TextField(blank=True, null=True)
     varieties = models.TextField(blank=True, null=True)
-    entry_instructions = models.TextField(blank=True, null=True)
+    entryinstructions = models.TextField(blank=True, null=True)
     ibu = models.ForeignKey(Stat, blank=True, null=True, related_name='ibu_subcategory')
     og = models.ForeignKey(Stat, blank=True, null=True, related_name='og_subcategory')
     fg = models.ForeignKey(Stat, blank=True, null=True, related_name='fg_subcategory')
