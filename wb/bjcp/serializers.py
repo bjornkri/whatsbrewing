@@ -19,6 +19,9 @@ class InlineSubCatSerializer(serializers.ModelSerializer):
     class Meta:
         model = SubCategory
         fields = ('code', 'name', 'url')
+        extra_kwargs = {
+            'url': {'lookup_field': 'code'}
+        }
 
 
 class MinimalCategorySerializer(serializers.ModelSerializer):
@@ -34,6 +37,9 @@ class SubCategorySerializer(serializers.HyperlinkedModelSerializer):
                   'aroma', 'appearance', 'flavor', 'mouthfeel', 'impression', 'comments',
                   'history', 'ingredients', 'comparison', 'examples', 'varieties', 'entryinstructions',
                   'ibu', 'og', 'fg', 'srm', 'abv', 'tags')
+        extra_kwargs = {
+            'url': {'lookup_field': 'code'}
+        }
 
     category = MinimalCategorySerializer()
     ibu = StatCategorySerializer()

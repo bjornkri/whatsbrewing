@@ -17,3 +17,4 @@ class SubCategoryViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = SubCategory.objects.all().order_by('id')
     serializer_class = SubCategorySerializer
+    lookup_field = 'code'
