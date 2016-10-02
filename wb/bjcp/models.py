@@ -45,3 +45,6 @@ class SubCategory(models.Model):
     srm = models.ForeignKey(Stat, blank=True, null=True, related_name='srm_subcategory')
     abv = models.ForeignKey(Stat, blank=True, null=True, related_name='abv_subcategory')
     tags = models.ManyToManyField(Tag)
+
+    def __unicode__(self):
+        return "{0} - {1}".format(self.code, self.name)
