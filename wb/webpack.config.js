@@ -1,20 +1,20 @@
 module.exports = {
-  context: __dirname + "/js_src",
-  entry: "./app.js",
+  context: __dirname + '/js_src',
+  entry: './app.jsx',
   output: {
-    filename: "app.js",
-    path: __dirname + "/static/js/",
+    filename: 'app.js',
+    path: __dirname + '/static/js/',
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['', '.js', '.jsx', '.json'],
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ["babel-loader"]
-      }
-    ]
-  }
+        loaders: ['babel-loader'],
+      },
+    ],
+  },
 };
