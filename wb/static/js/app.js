@@ -68,12 +68,19 @@
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'In the meantime, here&rsqo;s a free ',
+	      'In the meantime, here\u2019s a free ',
 	      _react2.default.createElement(
 	        'a',
 	        { href: '/api/' },
 	        'BJCP API'
 	      )
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Foaming beergreets,',
+	      _react2.default.createElement('br', null),
+	      '-Bj\xF6rn'
 	    )
 	  );
 	};
