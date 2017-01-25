@@ -58,10 +58,25 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var Footer = function Footer() {
+	  return _react2.default.createElement(
+	    'p',
+	    null,
+	    'Beergreets,',
+	    _react2.default.createElement('br', null),
+	    '-Bj\xF6rn'
+	  );
+	};
+	
 	var App = function App() {
 	  return _react2.default.createElement(
 	    'div',
 	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'What\u2019s Brewing?'
+	    ),
 	    _react2.default.createElement(
 	      'h2',
 	      null,
@@ -77,13 +92,7 @@
 	        'BJCP API'
 	      )
 	    ),
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      'Beergreets,',
-	      _react2.default.createElement('br', null),
-	      '-Bj\xF6rn'
-	    )
+	    _react2.default.createElement(Footer, null)
 	  );
 	};
 	
