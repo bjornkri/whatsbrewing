@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../scss/app.scss';
 
 
 const App = () => (
   <div>
-    <h1>Coming soon</h1>
+    <h2>Coming soon</h2>
     <p>In the meantime, here&rsquo;s a free <a href="/api/">BJCP API</a></p>
-    <p>Foaming beergreets,<br />
+    <p>Beergreets,<br />
     -Bj&ouml;rn
     </p>
   </div>
