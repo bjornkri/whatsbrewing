@@ -16,6 +16,9 @@ class Brewery(models.Model):
     def __unicode__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = 'breweries'
+
 
 class Beer(models.Model):
     """
