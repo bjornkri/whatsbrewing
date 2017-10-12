@@ -1,6 +1,6 @@
 beautifulsoup4==4.6.0
 Django==1.11.6
 django-extensions==1.9.1
-djangorestframework==3.4.7
+djangorestframework==3.7.0
 ipython==5.1.0
 lxml==3.6.4
