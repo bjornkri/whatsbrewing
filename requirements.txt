@@ -1,5 +1,5 @@
 beautifulsoup4==4.6.0
-Django==1.10.2
+Django==1.11.6
 django-extensions==1.7.4
 djangorestframework==3.4.7
 ipython==5.1.0
