@@ -1,4 +1,4 @@
-beautifulsoup4==4.6.0
+beautifulsoup4==4.6.1
 Django==2.0.4
 django-extensions==2.0.6
 djangorestframework==3.7.7
